@@ -10,6 +10,12 @@ const config: Config = {
   collectCoverage: true,
   coverageDirectory: "coverage",
   coverageProvider: "v8",
+  testEnvironment: "node",
+  testEnvironmentOptions: {
+    env: {
+      NODE_ENV: "test"
+    }
+  },
   moduleFileExtensions: [
     "js",
     "ts",
@@ -19,7 +25,6 @@ const config: Config = {
     "<rootDir>"
   ],
   preset: 'ts-jest',
-  testEnvironment: "node",
   testMatch: [
     "**/*.test.ts"
   ],
