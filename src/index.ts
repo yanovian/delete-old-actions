@@ -88,6 +88,9 @@ export async function run(): Promise<void> {
   }
 }
 
-run()
-  .then(() => {})
-  .catch(e => core.setFailed(e));
+// Only run the main function when not in a test environment
+if (process.env.NODE_ENV !== 'test') {
+  run()
+    .then(() => {})
+    .catch(e => core.setFailed(e));
+}
