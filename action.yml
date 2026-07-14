@@ -1,4 +1,4 @@
-name: 'Delete Old GitHub Actions Runs'
+name: 'Prune Old GitHub Actions Runs'
 description: 'Deletes workflow runs older than a specified number of days'
 author: 'Pooyan Razian'
 
