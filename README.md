@@ -1,8 +1,9 @@
 <div align="center">
 
-[![License](https://img.shields.io/github/license/yanovation/delete-old-actions?color=blue&label=License&style=flat-square)](https://github.com/yanovation/delete-old-actions/blob/main/LICENSE.md)
-[![Last commit](https://img.shields.io/github/last-commit/yanovation/delete-old-actions.svg?color=blue&style=flat-square)](https://github.com/yanovation/delete-old-actions/commits/main)
-[![Contributors](https://img.shields.io/github/contributors/yanovation/delete-old-actions?color=blue&style=flat-square)](https://github.com/yanovation/delete-old-actions/graphs/contributors)
+[![License](https://img.shields.io/github/license/yanovian/delete-old-actions?color=blue&label=License&style=flat-square)](https://github.com/yanovian/delete-old-actions/blob/main/LICENSE.md)
+[![Last commit](https://img.shields.io/github/last-commit/yanovian/delete-old-actions.svg?color=blue&style=flat-square)](https://github.com/yanovian/delete-old-actions/commits/main)
+[![Contributors](https://img.shields.io/github/contributors/yanovian/delete-old-actions?color=blue&style=flat-square)](https://github.com/yanovian/delete-old-actions/graphs/contributors)
+[![Marketplace](https://img.shields.io/badge/marketplace-Prune%20Old%20GitHub%20Actions%20Runs-blue?style=flat-square&logo=github)](https://github.com/marketplace/actions/prune-old-github-actions-runs)
 </div>
 
 # About
@@ -21,11 +22,11 @@ on:
     - cron: '0 0 * * *'  # Specify your own schedule
 
 jobs:
-  delete-old-actions:
+  prune-old-actions:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: yanovation/delete-old-actions@v1
+      - uses: actions/checkout@v7
+      - uses: yanovian/delete-old-actions@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           days-ago: 30
@@ -39,11 +40,11 @@ on:
     - cron: '0 0 * * *'
 
 jobs:
-  delete-old-actions:
+  prune-old-actions:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: yanovation/delete-old-actions@v1
+      - uses: actions/checkout@v7
+      - uses: yanovian/delete-old-actions@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           days-ago: 30
@@ -58,11 +59,11 @@ on:
     - cron: '0 0 * * *'
 
 jobs:
-  delete-old-actions:
+  prune-old-actions:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: yanovation/delete-old-actions@v1
+      - uses: actions/checkout@v7
+      - uses: yanovian/delete-old-actions@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           days-ago: 30
@@ -101,7 +102,7 @@ Alternatively, you can authenticate with a GitHub App (needs more setup):
           app-id: ${{ vars.APP_ID }}
           private-key: ${{ secrets.APP_PRIVATE_KEY }}
 
-      - uses: yanovation/delete-old-actions@v1
+      - uses: yanovian/delete-old-actions@v1
         with:
           token: ${{ steps.generate-token.outputs.token }}
           days-ago: 30

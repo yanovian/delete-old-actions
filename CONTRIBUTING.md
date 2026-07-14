@@ -30,4 +30,4 @@ Thanks! :heart: :heart: :heart:
 
 Code owners:
 - [Pooyan Razian](https://pooyan.info)
-- [Yanovation](https://yanovation.com)
+- [Yanovian](https://yanovian.com)

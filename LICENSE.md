@@ -175,7 +175,7 @@ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 
 END OF TERMS AND CONDITIONS
 
-Copyright 2025 [Pooyan.info](https://pooyan.info), [Yanovation OÜ](https://yanovation.com/), or their affiliates. All Rights Reserved.
+Copyright 2025 [Pooyan.info](https://pooyan.info), [Yanovian OÜ](https://yanovian.com/), or their affiliates. All Rights Reserved.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
