@@ -4,13 +4,13 @@
 
 * Fork and clone the repository
 * Install PNPM
-* Configure and install dependencies: `pnpm install`
+* Configure and install dependencies: `make install`
 * Create a new branch:
     * `git checkout -b feat/my-feature`
     * `git checkout -b fix/my-fix`
-* Make your change, add tests, and make sure the tests still pass.
-* Make sure your code is correctly formatted:
-* Build the project: `pnpm build`
+* Make your change, add tests, and make sure `make test` still passes.
+* Make sure your code is correctly formatted: `make lint`
+* Build the project: `make build`
 * Push to your fork and submit a pull request
 * Wait for your pull request to be reviewed and merged
 

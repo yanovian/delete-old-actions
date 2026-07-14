@@ -1,6 +1,18 @@
-.PHONY: check release-major release-minor release-patch
+.PHONY: install lint build test check release-major release-minor release-patch
 
 PNPM := pnpm
+
+install: ## Install dependencies
+	$(PNPM) install
+
+lint: ## Lint the code
+	$(PNPM) lint
+
+build: ## Build dist/index.js from src
+	$(PNPM) build
+
+test: ## Run the test suite
+	$(PNPM) test
 
 check:
 	@if [ -n "$$(git status --porcelain)" ]; then \
