@@ -14,6 +14,12 @@ When you are ready to use this, you can schedule it to check periodically.
 
 **WARNING: Deletion cannot be undone. Use at your own risk.**
 
+## Migrating from the old action
+This action used to live under the `yanovation` org and was listed on the Marketplace as
+[Delete Old GitHub Actions Runs](https://github.com/marketplace/actions/delete-old-github-actions-runs). That listing is now deprecated.
+
+If you're coming from there, just replace the `uses:` string with `yanovian/delete-old-actions@v1` — everything else (inputs, behavior) stays the same, no other changes needed.
+
 ## Usage
 
 ```yaml
