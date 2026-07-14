@@ -1,7 +1,7 @@
 {
   "name": "prune-old-actions",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.8",
   "main": "dist/index.js",
   "scripts": {
     "build": "ncc build src/index.ts -o dist",

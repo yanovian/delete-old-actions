@@ -123,7 +123,6 @@ Make sure to give the token the least needed access.
 - [How to release](./_docs/release.md)
 - [How to contribute](./CONTRIBUTING.md)
 - [License](./LICENSE.md)
-- [Change log](./CHANGELOG.md)
 
 ## Articles (to learn more about it)
 - [Automatically delete old GitHub Actions runs](https://pooyan.info/articles/delete-old-github-actions-runs)

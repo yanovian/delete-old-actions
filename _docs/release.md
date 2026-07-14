@@ -1,22 +1,25 @@
 # Release a new version
-Check the current version:
+
+Run the matching release target:
 ```bash
-git tag --list --sort=-v:refname | head -n 1
+make release-patch   # bug fixes
+make release-minor   # new backwards-compatible features
+make release-major   # breaking changes
 ```
 
-Create a tag and push it to the release branch:
-```bash
-# Update the version before running the command
-RELEASE_VERSION="v1.0.0"
-git tag "${RELEASE_VERSION}" -m "Minor release: ${RELEASE_VERSION}"
-git push origin "${RELEASE_VERSION}"
-```
+Each one bumps `package.json`'s version, commits it (`Release vX.Y.Z`), tags it, and pushes.
+That's it — [`.github/workflows/release.yml`](../.github/workflows/release.yml) picks up the pushed tag and:
+- runs lint/tests
+- force-moves the major tag (e.g. `v1`) to point at the new release
+- creates the GitHub Release, titled `Release vX.Y.Z`, with GitHub's auto-generated notes (commits/PRs since the last tag)
+- GitHub Marketplace picks up the new release automatically — no manual step needed, **except once** (see below)
 
-Then move the major version tag (for example v1) to point to the Git ref of the current release:
+## One-time Marketplace setup
+The very first time this action is ever published to the Marketplace, GitHub requires publishing a release
+manually through the web UI so you can pick categories and accept the Marketplace Developer Agreement —
+this can't be done through the API or `action.yml`. Use:
+- Primary category: **Continuous Integration**
+- Secondary category: **Utilities**
 
-```bash
-git tag -fa v1 -m "Major release: v1"
-git push origin v1 --force
-```
-
-Then remember to push to Github Marketplace by releasing manually from the GUI.
+After that one-time setup, every release created by the `release.yml` workflow (steps above) automatically
+updates the existing Marketplace listing — no need to repeat this.
