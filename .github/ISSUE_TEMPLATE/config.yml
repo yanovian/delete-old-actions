@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Usage docs
+    url: https://github.com/yanovian/delete-old-actions#readme
+    about: Check the README for setup, inputs, and token permissions before filing a bug
