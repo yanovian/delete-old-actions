@@ -126,3 +126,7 @@ Make sure to give the token the least needed access.
 
 ## Articles (to learn more about it)
 - [Automatically delete old GitHub Actions runs](https://pooyan.info/articles/delete-old-github-actions-runs)
+
+## Projects using it
+
+- [Tabby: Chrome extension](https://github.com/yanovian/chrome-ext-tabby)
