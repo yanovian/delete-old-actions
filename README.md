@@ -6,6 +6,8 @@
 [![Marketplace](https://img.shields.io/badge/marketplace-Prune%20Old%20GitHub%20Actions%20Runs-blue?style=flat-square&logo=github)](https://github.com/marketplace/actions/prune-old-github-actions-runs)
 </div>
 
+> [Configuration →](_docs/configuration.md) · [FAQ and limitations →](_docs/faq-and-limitations.md)
+
 # About
 
 Removes old GitHub Actions runs to keep your repository clean.
@@ -120,6 +122,8 @@ Make sure to give the token the least needed access.
 
 ## Other docs
 
+- [Configuration](./_docs/configuration.md)
+- [FAQ and limitations](./_docs/faq-and-limitations.md)
 - [How to release](./_docs/release.md)
 - [How to contribute](./CONTRIBUTING.md)
 - [License](./LICENSE.md)
