@@ -134,3 +134,5 @@ Make sure to give the token the least needed access.
 ## Projects using it
 
 - [Tabby: Chrome extension](https://github.com/yanovian/chrome-ext-tabby)
+- [Why Am I Here?: Chrome extension](https://github.com/yanovian/chrome-ext-why-am-i-here)
+- [Breadcrumb: Chrome extension](https://github.com/yanovian/chrome-ext-breadcrumb)
